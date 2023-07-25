@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Prevision</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <div class="weather-app">
+    <div class="container">
+      <h3 class="brand">Thermograph Today</h3>
+     <div>
+        <h1 class="temp">23&#176;</h1>
+        <div class="city-time">
+          <h1 class="name"></h1>
+          <small>
+            <span class="time">16:27</span>
+            <span class="date">Friday July 21</span>
+          </small>
+        </div>
+        <div class="weather">
+          <img src = "icons/day/113.png" class="icon" alt="icon" width="50" height="50">
+          <span class="condition">Clean</span>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <form id="locationInput">
+        <input type="text" class="search" placeholder="Search Location...">
+        <button type="submit" class="submit">
+        <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <ul class="cities">
+        <li class="city">Paris</li>
+        <li class="city">New York</li>
+        <li class="city">Moscow</li>
+        <li class="city">Cairo</li>
+        <li class="city">Luanda</li>
+        <li class="city">Madrid</li>
+      </ul>
+
+      <ul class="details">
+        <h4>Weather Details</h4>
+        <li>
+          <span>Cloudy</span>
+          <span class="cloud">89%</span>
+        </li>
+        <li>
+          <span>Humidity</span>
+          <span class="humidity">64%</span>
+        </li>
+        <li>
+          <span>Wind</span>
+          <span class="wind">8km/h</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</html>
